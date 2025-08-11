@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มสมัครเรียนต่อระดับปริญญาตรี</title>
+</head>
+<body>
+    <h1>ส่วนที่ 1 :ข้อมูลส่วนตัว</h1>
+    <label for="fruit">คำนำหน้าชื่อ:</label>
+    <select name="คำนำหน้าชื่อ">
+        <option value="คำนำหน้าชื่อ">นาย</option>
+        <option value="คำนำหน้าชื่อ">นาง</option>
+        <option value="คำนำหน้าชื่อ">นางสาว</option>
+    </select> <br><br>
+    ชื่อ : <input type="text"><br><br>
+    นามสกุล : <input type="text"><br><br>
+    เลขบัตรประชาชน : <input type="text" maxlength="13"><br><br>
+    วันเดือนปีเกิด : <input type="date"><br><br>
+    อายุ (ปี) : <input type="number"><br><br>
+    เพศ : 
+        <input type="radio" name="sex">ชาย
+        <input type="radio" name="sex">หญิง
+        <input type="radio" name="sex">ไม่ระบุ<br><br>
+    สัญชาติ : <input type="text"><br><br>
+    เชื้อชาติ : <input type="text"><br><br>
+    ศาสนา : <input type="text"><br><br> 
+    เบอร์โทรศัพท์ : <input type="tel"><br><br>
+    อีเมล : <input type="email"><br><br>
+    ที่อยู่ <br> 
+        <textarea name="ที่อยู่"></textarea>
+    
+        <h1>ส่วนที่ 2 :ข้อมูลการสมัครเรียน</h1>
+    วุฒิที่จบมา <br>
+        <select name="วุฒิ">
+            <option value="วุฒิ">ม.6</option>
+            <option value="วุฒิ">ปวช.</option>
+            <option value="วุฒิ">ปวส.</option>
+        </select> <br><br>
+    ชื่อสถานศึกษาที่จบ : <input type="text"> <br><br>
+    ปีที่จบ : <input type="number"> <br><br>
+    GPA : <input type="number" step="0.01"> <br><br>
+    สาขาที่สมัคร : <select name="สาขา">
+        <option value="สาขา">IT</option>
+        <option value="สาขา">ITI</option>
+        <option value="สาขา">INE</option>
+        <option value="สาขา">INET</option>
+    </select> <br><br>
+    เหตุผลที่เลิอกสาขา : <textarea name="เหตุผล"></textarea>
+
+    <h1>ส่วนที่ 3 :ประวัติการศึกษา</h1>
+    <p>ให้นักเรียนกรองข้อมูลการศึกษา 3 ระดับได้แก่:</p>
+    <table border="0">
+        <tr>
+            <th>ระดับการศึกษา</th>
+            <th>สถานศึกษา</th>
+            <th>จังหวัด</th>
+            <th>ปีที่เข้า</th>
+            <th>ปีที่จบ</th>
+            <th>วุฒิที่ได้รับ</th>
+            <th>GPA</th>
+        </tr>
+        <tr>
+            <td>ประถมศึกษา</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>มัธยมต้น</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>มัธยมปลาย / ปวช./ปวส.</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr><br><br>
+    </table>
+
+    <h1>ส่วนที่ 4 :เอกสารแนบ</h1>
+    แนบไฟล์สำเนาบัตรประชาชน : <input type="file"><br><br>
+    แนบไฟล์วุฒิการศึกษา : <input type="file">
+    
+    <h1>ส่วนที่ 5 :ยืนยันและส่งฟอร์ม</h1>
+    ยอมรับเงื่อนไข : <input type="checkbox"><br><br>
+    Sumbmit <input type="submit">
+    Reset <input type="reset">
+</body>
+</html>
